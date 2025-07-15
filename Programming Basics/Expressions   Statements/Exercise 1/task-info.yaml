@@ -1,0 +1,26 @@
+type: output
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 92
+        length: 35
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 92
+        initialized_from_dependency: false
+        encrypted_possible_answer: kHgSOrTxoHc2YzBIUxo9KapwkS7bRYXuFK//vWcVRzQ=
+        selected: true
+        status: Solved
+    learner_created: false
+  - name: test/output.txt
+    visible: false
+    learner_created: false
+feedback_link: |
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Programming+Basics+%2F+Expressions+%26+Statements+%2F+Exercise1
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Tue, 15 Jul 2025 10:31:05 UTC"
+record: -1
