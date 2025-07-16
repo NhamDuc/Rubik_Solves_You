@@ -3,7 +3,9 @@ package recursionExercise1
 import atomictest.*
 
 tailrec fun simulation(group: String, level: Int) {
-  TODO()
+  if (level < 0) return
+  trace("Simulation: $group Reality: $level")
+  simulation(group, level-1)
 }
 
 fun main() {

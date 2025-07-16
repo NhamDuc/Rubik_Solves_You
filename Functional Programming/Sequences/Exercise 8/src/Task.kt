@@ -4,8 +4,9 @@ import atomictest.eq
 
 fun fibonacci(): Sequence<Int> {
   var previous = 1
-  return generateSequence(0) { TODO()
-  }
+  return generateSequence(0 to 1) { (prev, cur) ->
+    cur to (prev + cur) // prev = cur and so on
+  }.map { it.first }
 }
 
 fun main() {

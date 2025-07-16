@@ -3,7 +3,8 @@ package recursionExercise2
 import atomictest.eq
 
 fun factorial(n: Long): Long {
-  TODO()
+  if (n <= 1) return 1
+  return n * factorial(n-1)
 }
 
 fun main() {

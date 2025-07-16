@@ -1,6 +1,7 @@
 // Recursion/Task3.kt
 package recursionExercise3
 import atomictest.eq
+import sequencesExercise8.fibonacci
 
 // For comparison
 fun fibonacciRecursive(n: Int): Long {
@@ -18,7 +19,24 @@ fun fibonacciRecursive(n: Int): Long {
 }
 
 fun fibonacciIterative(n: Int): Long {
-  TODO()
+  var sum = 0L
+  var prev1 = 0L
+  var prev2 = 0L
+  for (i in 0..n) {
+    if (i == 0) {
+      sum = 0
+    }
+    if (i == 1 || i == 2) {
+      prev1 = 1
+      sum = prev1
+      prev2 = 1
+    } else {
+      sum = prev1 + prev2
+      prev2 = prev1
+      prev1 = sum
+    }
+  }
+  return sum
 }
 
 fun main() {

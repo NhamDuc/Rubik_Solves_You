@@ -3,7 +3,8 @@ package localFunctionsExercise1
 import atomictest.eq
 
 fun f(): Int {
-  TODO()
+  val g: () -> Int = { 47 }
+  return g()
 }
 
 fun main() {

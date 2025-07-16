@@ -3,7 +3,8 @@ package theImportanceOfLambdasExercise2
 import atomictest.eq
 
 fun filterNonBlank(strings: List<String>): List<String> =
-  TODO()
+  strings.filter { it.trim().isNotEmpty()}
+
 
 fun main() {
   filterNonBlank(listOf("", "a", "  ")) eq listOf("a")

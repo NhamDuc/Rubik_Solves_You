@@ -1,9 +1,10 @@
 // OperationsOnCollections/Task2.kt
 package operationsOnCollectionsExercise2
 import atomictest.eq
+import creatinggenerics.items
 
 val operation = { x: Int ->
-  TODO()
+  x in 10..99
 }
 
 fun main() {

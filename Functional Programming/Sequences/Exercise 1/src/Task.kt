@@ -5,5 +5,11 @@ fun School.commonLessons(
   instructor: Instructor,
   student: Student
 ): Sequence<Lesson> {
-  TODO()
+  return this.lessons
+    .filter { lesson ->
+      lesson.instructor == instructor
+    }
+    .filter { lesson ->
+      lesson.students.contains(student)
+    }
 }

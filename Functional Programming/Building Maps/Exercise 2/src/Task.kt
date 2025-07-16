@@ -3,9 +3,13 @@ package buildingMapsExercise2
 import atomictest.eq
 
 fun <T, R> List<T>.groupBy(keySelector: (T) -> R): Map<R, List<T>> {
-  val result = mutableMapOf<R, MutableList<T>>()
-  TODO()
-  return result
+  val map = mutableMapOf<R, MutableList<T>>()
+  for(t in this) {
+    val key = keySelector(t)
+    val list = map.getOrPut(key) {mutableListOf()}
+    list += t
+  }
+  return map
 }
 
 data class Person(val name: String, val age: Int)

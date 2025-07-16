@@ -1,11 +1,17 @@
 // Lambdas/Task3.kt
 package lambdasExercise3
 import atomictest.eq
+import extensionlambdas.unitReturn
 
 data class Student(val id: Int, val name: String)
 
 fun registerStudents(names: List<String>, startId: Int = 0): List<Student> =
-  TODO()
+  names.mapIndexed { i, name ->
+    Student(startId + i, name)
+  }
+
+
+
 
 fun main() {
   val students = listOf("Alice", "Bob")

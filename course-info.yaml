@@ -37,4 +37,4 @@ additional_files:
   - name: settings.gradle
 mode: Study
 feedback_link: https://plugins.jetbrains.com/plugin/17654-atomickotlin/reviews
-yaml_version: 3
+yaml_version: 4
